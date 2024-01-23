@@ -1,22 +1,24 @@
 .container{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+    width: 1100px;
+    margin: 0 auto;
 }
 
 
 #card{
+   width: 900;
    display: flex;
    flex-wrap: wrap;
-   gap: 20px;
+   gap: 30px;
+   
 }
 
 
 .cardBox{
     width: 300px;
     height: auto;
-    box-shadow: 2px 4px 2px grey;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     padding: 20px;
+    border-radius: 20px;
 }
 
 .cardBox img{

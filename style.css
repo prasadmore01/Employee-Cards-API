@@ -6,9 +6,21 @@
 
 
 #card{
+   display: flex;
+   flex-wrap: wrap;
+   gap: 20px;
+}
+
+
+.cardBox{
     width: 300px;
     height: auto;
     box-shadow: 2px 4px 2px grey;
     padding: 20px;
+}
+
+.cardBox img{
+    width: 100px;
+
 }
 

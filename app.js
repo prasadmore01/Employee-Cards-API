@@ -29,27 +29,38 @@ employees.onload = function(){
 function display(){
     console.log(empArr)
     let card = document.getElementById('card')
-    let fname = document.getElementById('fname')
-    let email = document.getElementById('email')
-    let bday = document.getElementById('bday')
-    let gender = document.getElementById('gender')
-    let pno = document.getElementById('pno')
+   
 
     for(let i=0;i<empArr.length;i++){
         let cards = document.createElement('div')
-        fname.innerText = empArr[i].firstName
-        email.innerText = empArr[i].email
-        bday.innerText = empArr[i].birthDate
-        gender.innerText = empArr[i].gender
-        pno.innerText = empArr[i].phone
+        cards.classList.add('cardBox')
 
+        let img = document.createElement('img')
+        img.src = empArr[i].image
 
-        cards.appendChild()
-        cards.appendChild(email.innerText)
-        cards.appendChild(bday.innerText)
-        cards.appendChild(gender.innerText)
-        cards.appendChild(pno.innerText)
+        let h1 = document.createElement('h1')
+        h1.textContent = empArr[i].firstName
+
+        let h2 = document.createElement('h2')
+        h2.textContent = empArr[i].email
+
+        let h3 = document.createElement('h2')
+        h3.textContent = empArr[i].birthDate
+
+        let h4 = document.createElement('h2')
+        h4.textContent = empArr[i].gender
+
+        let h5 = document.createElement('h2')
+        h5.textContent = empArr[i].phone
+
         card.appendChild(cards)
+        cards.appendChild(img)
+        cards.appendChild(h1)
+        cards.appendChild(h2)
+        cards.appendChild(h3)
+        cards.appendChild(h4)
+        cards.appendChild(h5)
+
         
 
         console.log(cards)
